@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <style>
+        /* 화면 중앙 정렬 및 트렌디한 어두운 배경 */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0d1117; /* 깃허브 다크모드 풍 배경 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* 버튼들을 감싸는 컨테이너 (너비 제한) */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* 버튼 사이 간격 */
+            width: 90%;
+            max-width: 360px; /* 모바일 크기에 최적화 */
+            padding: 20px;
+        }
+
+        /* 공통 버튼 디자인 */
+        .link-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 12px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 첫 번째 버튼: 메인 강조 (그라데이션 효과) */
+        .btn-primary {
+            background: linear-gradient(135deg, #2f80ed 0%, #00d2ff 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 210, 255, 0.4);
+        }
+
+        /* 두 번째 버튼: 서브 (깔끔한 테두리 스타일) */
+        .btn-outline {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #f0f6fc;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* 세 번째 버튼: 포인트 컬러 (심플한 단색) */
+        .btn-accent {
+            background-color: #05ffb0; /* 깃허브 초록색 */
+            color: white;
+        }
+        .btn-accent:hover {
+            background-color: #2ea44f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(35, 134, 54, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 오직 버튼들만 배치된 영역 -->
+    <div class="button-container">
+        
+        <!-- 각 버튼의 href="" 안에 원하는 주소를 넣고, 텍스트를 수정하세요 -->
+        <a href="https://ieasxu1407.github.io/whiteboard2/" target="_blank" class="link-btn btn-primary">
+            일반 화이트보드
+        </a>
+        
+        <a href="https://velog.io" target="_blank" class="link-btn btn-outline">
+            고급 화이트보드
+        </a>
+        
+        <a href="mailto:your-email@gmail.com" class="link-btn btn-accent">
+             심플 화이트보드
+        </a>
+        
+    </div>
+
+</body>
+</html>
+
